@@ -1,0 +1,35 @@
+import datetime
+TodayDate=datetime.datetime.now()
+print("Check in (a) check out(b)")
+inputt=input()
+c="Your user name or password was false try again"
+if inputt=="a":
+    Name=input("Enter your name")
+    Password=input("Enter your password")
+    if Name=="Rashid" and Password=="2345":
+        print("Welcome"","+Name)
+        print(TodayDate)  
+    elif Name=="Natasha" and Password=="1234":
+        print("Welcome"","+Name)
+        print(TodayDate)  
+    elif Name=="Anmol" and Password=="5678":
+        print('Welcome'"," +Name)
+        print(TodayDate)
+    else:
+        print(c) 
+elif inputt=="b":
+    Name=input("Enter your name")
+    Password=input("Enter your password")
+c="Your user name or password was false try again"
+if Name=="Rashid" and Password=="2345":
+    print("Bye Bye"","+Name)
+    print(TodayDate)  
+elif Name=="Natasha" and Password=="1234":
+    print("Bye Bye""."+Name)
+    print(TodayDate)  
+elif Name=="Anmol" and Password=="5678":
+    print('Bye Bye'"," +Name)
+    print(TodayDate)
+else:
+    print(c)
+
